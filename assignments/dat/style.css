@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #0f1018;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.label {
+  letter-spacing: 8px;
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  background: linear-gradient(90deg, #a78bfa, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 70px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.card {
+  height: 220px;
+  background: #1b1c27;
+  border-radius: 28px;
+  padding: 38px;
+  border: 2px solid transparent;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.purple {
+  border-color: #6d4bc4;
+}
+
+.green {
+  border-color: #145c47;
+}
+
+.orange {
+  border-color: #7c3f0a;
+}
+
+.blue {
+  border-color: #123b5c;
+}
+
+.icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #2d3144;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.glow {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffb45c, #ff7a1a);
+  box-shadow: 0 0 35px #ff8a2a;
+  margin-bottom: 25px;
+}
+
+.card h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+footer {
+  color: #64748b;
+  font-size: 18px;
+  margin-top: 55px;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    height: auto;
+  }
+}

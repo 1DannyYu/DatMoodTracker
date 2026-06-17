@@ -1,0 +1,7 @@
+f = open("MyFile.txt", "r")
+
+
+content = f.read()
+print(content)
+
+f.close()
