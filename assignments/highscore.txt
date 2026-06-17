@@ -1,5 +1,0 @@
-Danny,100,Easy
-Chai,100,Easy
-Danny,90,Easy
-Danny,80,Easy
-Chris,80,Easy
